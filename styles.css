@@ -3,6 +3,7 @@
 
 body{
 	
-	backround: orange;
-	
+	backround-color: orange;
+	width: 100%;
+	height: 100%;
 }
