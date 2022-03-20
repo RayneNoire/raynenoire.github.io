@@ -9,18 +9,28 @@
 
 body{
 	
-	backround: #333;
+	background: #333;
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
 	
 }
 
+
+/* contains logic for how the canvas panel or game screen is displayed */
 .game-container{
 	position: relative;
-	width: 480px;
+	width: 480px;  
 	height: 320px;
-	outline: 1px solid #fff;
+	 margin: 0 auto;  /*canters the canvas box on screen */
+	/*margin-top: 20px; /* overwrides above centering oly for top margin*/
+	outline: 1px solid #fff;  /* adds outline to canvas in pc or pixels*/
+	
+	transform: scale(3) translateY(50%);
 	
 }
 	
+	.game-container canvas
+	{
+		image-rendering: pixelated;
+	}
